@@ -1,10 +1,10 @@
 node{
 
-   def tomcatWeb = 'D:\\Auto_deployment\\apache-tomcat-9.0.30\\apache-tomcat-9.0.30\\webapps'
-   def tomcatBin = 'D:\\Auto_deployment\\apache-tomcat-9.0.30\\apache-tomcat-9.0.30\\bin'
+   def tomcatWeb = 'C:\\Program Files\\Apache Software Foundation\\apache-tomcat-10.0.14\\webapps'
+   def tomcatBin = 'C:\\Program Files\\Apache Software Foundation\\apache-tomcat-10.0.14\\bin'
    def tomcatStatus = ''
    stage('SCM Checkout'){
-     git 'https://github.com/sivajavatechie/JenkinsWar.git'
+     git 'https://github.com/ssld/TomcatJenkin.git'
    }
    stage('Compile-Package-create-war-file'){
       // Get maven home path
